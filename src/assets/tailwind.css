@@ -1,0 +1,99 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.no-data{
+  @apply my-5;
+  height:10rem;
+}
+
+.jd-logo{
+  @apply mt-7;
+  height:4.4rem;
+}
+
+.disabled{
+  animation: showForm .3s ease-in;
+}
+
+@keyframes showForm{
+  0%{
+    transform:translateX(-200px)
+  }
+  100%{
+    transform:translateX(0)
+  }
+}
+
+
+
+.btn-add-icon{
+@apply text-green-600 text-5xl absolute md:hidden;
+  bottom:-2.2rem;
+  right: 0;
+}
+
+.icon-line{
+  @apply  absolute;
+  bottom:-1.25rem;
+  right:-1.55rem;
+  font-size:2.4rem;
+}
+
+.add-edit-form{
+  @apply shadow-lg rounded-md m-5 w-11/12;
+  @apply lg:left-6 lg:w-1/3;
+  height: 95vh;
+  background:rgba(255, 255, 255, 0.980);
+  z-index:10;
+  border:2px solid #ccc;
+}
+
+
+.yellow-line{
+  @apply border-yellow-600 border-2 absolute;
+  width:70%;
+  bottom:-7px;
+  left:0;
+}
+
+.blue-line{
+  @apply border-blue-600 border-2 absolute;
+  width:70%;
+  bottom:-7px;
+  right:0;
+}
+
+.blue-line-top{
+  @apply border-blue-600 border-2 absolute;
+  width:70%;
+  top:-7px;
+  right:0;
+}
+
+.values-header {
+    @apply text-lg uppercase font-semibold;
+    @apply md:text-2xl;
+  }
+  
+  .circle-svg {
+    top: -29px;
+  }
+  
+  .add-options {
+    @apply absolute w-60 bg-gray-50 right-0 top-0 py-5 rounded-md;
+    z-index: 2;
+  }
+  
+  .add-options .add-options-btn {
+    @apply relative w-full text-left pl-3 py-2 cursor-pointer hover:bg-white transition-all text-gray-500;
+  }
+  
+  .btn-add{
+      @apply text-gray-600 absolute;
+      top:-11px;
+      right:-11px;
+      z-index:3;
+  }

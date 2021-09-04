@@ -100,7 +100,7 @@
       <Card v-for="(principle, index) in principles" :key="index" class="principle-style" v-else>
         <template v-slot:card-content>
           <Icon iconName="cancel" class="close-icon" @click="deletePrinciple(principle.id)"/>
-          <p :class="{'header-icon z-10 font-bold': true,'z-10': true,'font-bold': true,'text-9xl': index <= 8,'text-8xl': index >= 8,'modified-icon': index >= 8,}">
+          <p :class="{'header-icon z-10 font-bold': true, 'text-9xl': index <= 8,'text-8xl': index >= 8,'modified-icon': index >= 8,}">
             {{ index + 1 }}
           </p>
           <Icon iconName="radio_button_unchecked" class="header-icon header-icon-circle"/>
